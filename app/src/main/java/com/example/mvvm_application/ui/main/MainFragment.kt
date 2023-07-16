@@ -36,6 +36,23 @@ class MainFragment : Fragment() {
             message.text = viewModel.result.value.toString()
         }
 
+        var editText1 = view.findViewById<TextView>(R.id.EditText1)
+        var editText2 = view.findViewById<TextView>(R.id.EditText2)
+
+        viewModel.result.observe(viewLifecycleOwner) {
+            message.text = it.toString()
+        }
+
+        var addButton = view.findViewById<Button>(R.id.addButton)
+        addButton.setOnClickListener{
+            //viewModel.add(4.0,6.0)
+            val num1 = editText1.text.toString().toDouble()
+            val num2 = editText2.text.toString().toDouble()
+            viewModel.add(num1, num2)
+            //    message.text = viewModel.addAntiFunction(Math.random(),12.0).toString()
+
+        }
+
         return view
     }
 
