@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MVVM_Application</string>
+    <string name="enter_second_number">enter_second_number</string>
+    <string name="enter_first_number">enter_first_number</string>
+    <string name="First_Number" />
+    <string name="Second_Number" />
+    <string name="first_number">First_Number</string>
+    <string name="second_number">Second_Number</string>
+</resources>
