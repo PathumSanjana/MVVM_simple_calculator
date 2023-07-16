@@ -69,6 +69,14 @@ class MainFragment : Fragment() {
             viewModel.multify(num1, num2)
         }
 
+        var divideButton = view.findViewById<Button>(R.id.divideButton)
+        divideButton.setOnClickListener{
+            //viewModel.devide(4.0,6.0)
+            val num1 = editText1.text.toString().toDouble()
+            val num2 = editText2.text.toString().toDouble()
+            viewModel.devide(num1, num2)
+        }
+
         return view
     }
 
