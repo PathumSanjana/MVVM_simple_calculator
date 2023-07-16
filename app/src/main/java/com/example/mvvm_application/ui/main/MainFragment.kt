@@ -61,6 +61,14 @@ class MainFragment : Fragment() {
             viewModel.sub(num1, num2)
         }
 
+        var multifyButton = view.findViewById<Button>(R.id.multifyButton)
+        multifyButton.setOnClickListener{
+            //viewModel.multify(4.0,6.0)
+            val num1 = editText1.text.toString().toDouble()
+            val num2 = editText2.text.toString().toDouble()
+            viewModel.multify(num1, num2)
+        }
+
         return view
     }
 
