@@ -24,4 +24,10 @@ class MainViewModel : ViewModel() {
         result.value = _result
 
     }
+
+    fun multify(number1: Double,number2: Double){
+        var _result = number1.times(number2)
+        result.value = _result
+
+    }
 }
