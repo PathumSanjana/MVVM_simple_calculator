@@ -30,4 +30,10 @@ class MainViewModel : ViewModel() {
         result.value = _result
 
     }
+
+    fun devide(number1: Double,number2: Double){
+        var _result = number1.div(number2)
+        result.value = _result
+
+    }
 }
