@@ -18,4 +18,10 @@ class MainViewModel : ViewModel() {
     // fun addAntiFunction(number1: Double,number2: Double) :Double{
     //     return number1.plus(number2)
     // }
+
+    fun sub(number1: Double,number2: Double){
+        var _result = number1.minus(number2)
+        result.value = _result
+
+    }
 }
